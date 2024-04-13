@@ -4,19 +4,40 @@
 </script>
 
 <div>
+	<div id='current-path' >
+		usr@terminal:{$page.url.pathname}$
+	</div>
 	<a class="terminal-nav" class:current-url={isSamePath($page.url.pathname, '/')} href="/">
-		{isSamePath($page.url.pathname, '/') ? '>' : ' '}home
+		{#if isSamePath($page.url.pathname, '/')}
+			<span>>home</span>
+		{:else}
+			<span>&nbsp;home</span>
+		{/if}
 	</a>
 
 	<a
 		class="terminal-nav"
 		class:current-url={isSamePath($page.url.pathname, '/projects')}
-		href="/projects">{isSamePath($page.url.pathname, '/projects') ? '>' : ' '}projects</a
+		href="/projects"
 	>
+		{#if isSamePath($page.url.pathname, '/projects')}
+			<span>>projects</span>
+		{:else}
+			<span>&nbsp;projects</span>
+		{/if}
+	</a>
 
-	<a class="terminal-nav" class:current-url={isSamePath($page.url.pathname, '/games')} href="/games"
-		>{isSamePath($page.url.pathname, '/games') ? '>' : ' '}games</a
+	<a
+		class="terminal-nav"
+		class:current-url={isSamePath($page.url.pathname, '/games')}
+		href="/games"
 	>
+		{#if isSamePath($page.url.pathname, '/games')}
+			<span>>games</span>
+		{:else}
+			<span>&nbsp;games</span>
+		{/if}
+	</a>
 </div>
 
 <style>
@@ -28,5 +49,8 @@
 	}
 	.terminal-nav:hover {
 		background-color: rgb(159, 231, 253);
+	}
+	#current-path{
+		color: rgb(48, 189, 48);
 	}
 </style>
