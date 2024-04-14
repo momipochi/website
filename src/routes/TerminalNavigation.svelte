@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { isSamePath } from '$lib/utils';
+	
 </script>
 
-<div>
-	<div id='current-path' >
-		usr@terminal:{$page.url.pathname}$
-	</div>
+<div id="nav-container">
 	<a class="terminal-nav" class:current-url={isSamePath($page.url.pathname, '/')} href="/">
 		{#if isSamePath($page.url.pathname, '/')}
 			<span>>home</span>
@@ -38,19 +36,20 @@
 			<span>&nbsp;games</span>
 		{/if}
 	</a>
+	
 </div>
 
 <style>
-	.current-url {
-		background-color: rgb(177, 221, 233);
+	#nav-container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
 	}
+	
 	.terminal-nav {
 		display: block;
 	}
 	.terminal-nav:hover {
-		background-color: rgb(159, 231, 253);
-	}
-	#current-path{
-		color: rgb(48, 189, 48);
+		background-color: rgb(60, 86, 94);
 	}
 </style>
