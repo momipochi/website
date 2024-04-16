@@ -3,8 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', mdsvexExtension],
-	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+	preprocess: [vitePreprocess()],
 
 	kit: {
 		adapter: adapter({
