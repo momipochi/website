@@ -48,6 +48,8 @@ jobs:
 
     environment:
       name: github-pages
+      env:
+        BASE_PATH: '/${{ github.event.repository.name }}'
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
