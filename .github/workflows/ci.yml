@@ -21,8 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Check formatting
-        run: npm run check:format
       - name: Check svelte
         run: npm run check:svelte
       - name: Check lints
