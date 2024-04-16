@@ -1,4 +1,4 @@
-import { page } from '$app/stores';
+import { base } from '$app/paths';
 
 export type RouteTpye = {
 	url: string;
@@ -6,7 +6,7 @@ export type RouteTpye = {
 };
 
 export const Routes: RouteTpye[] = [
-	{ url: '/website/', name: 'home' },
-	{ url: '/website/projects', name: 'projects' },
-	{ url: '/website/games', name: 'games' }
+	{ url: `${base}/`, name: 'home' },
+	{ url: `${base}/projects`, name: 'projects' },
+	{ url: `${base}/games`, name: 'games' }
 ];
