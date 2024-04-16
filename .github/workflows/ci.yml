@@ -48,8 +48,7 @@ jobs:
 
     environment:
       name: github-pages
-      baseurl: /website
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: /website
 
     steps:
       - name: Deploy
