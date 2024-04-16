@@ -1,42 +1,23 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { isSamePath } from '$lib/utils';
-	
+	import { Routes } from './routes';
 </script>
 
 <div id="nav-container">
-	<a class="terminal-nav" class:current-url={isSamePath($page.url.pathname, '/')} href="/">
-		{#if isSamePath($page.url.pathname, '/')}
-			<span>>home</span>
-		{:else}
-			<span>&nbsp;home</span>
-		{/if}
-	</a>
-
-	<a
-		class="terminal-nav"
-		class:current-url={isSamePath($page.url.pathname, '/projects')}
-		href="/projects"
-	>
-		{#if isSamePath($page.url.pathname, '/projects')}
-			<span>>projects</span>
-		{:else}
-			<span>&nbsp;projects</span>
-		{/if}
-	</a>
-
-	<a
-		class="terminal-nav"
-		class:current-url={isSamePath($page.url.pathname, '/games')}
-		href="/games"
-	>
-		{#if isSamePath($page.url.pathname, '/games')}
-			<span>>games</span>
-		{:else}
-			<span>&nbsp;games</span>
-		{/if}
-	</a>
-	
+	{#each Routes as route}
+		<a
+			class="terminal-nav"
+			class:current-url={isSamePath($page.url.pathname, route.url)}
+			href={route.url}
+		>
+			{#if isSamePath($page.url.pathname, route.url)}
+				<span>>{route.name}</span>
+			{:else}
+				<span>&nbsp;{route.name}</span>
+			{/if}
+		</a>
+	{/each}
 </div>
 
 <style>
@@ -45,7 +26,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	
+
 	.terminal-nav {
 		display: block;
 	}
