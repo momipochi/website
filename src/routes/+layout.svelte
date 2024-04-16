@@ -24,7 +24,7 @@
 		<div id="app-container">
 			<div class="terminal-nav"><TerminalNavigation /></div>
 			<div class="content">
-				<main>
+				<main class="main-content">
 					<slot />
 				</main>
 			</div>
@@ -49,20 +49,18 @@
 	.terminal-nav {
 		width: 20%;
 	}
-	.content-main {
+	.main-content {
 		display: flex;
-		overflow-y: auto;
-		margin: 0 auto auto auto;
+		margin: 0 auto 0 auto;
 	}
 	.content {
 		display: flex;
 		width: 80%;
-		height: 80%;
-		padding: 0 5% 5% 5%;
-		margin: 0 auto auto auto;
-		
+		height: 90%;
+		padding: 0 2% 2% 2%;
+		margin: 0 auto 0 auto;
 	}
-	
+
 	#app-container {
 		display: flex;
 		width: 100%;
