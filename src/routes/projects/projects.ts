@@ -14,8 +14,8 @@ export const projects: ProjectType[] = [
 	{
 		title: 'this website',
 		description: 'My website.',
-		url: '/',
-		image: { src: '', alt: 'nothing' },
+		url: 'https://github.com/momipochi/website',
+		image: { src: '', alt: "you're looking at it" },
 		technologies: ['typescript', 'svelte', 'sveltekit']
 	},
 	{
