@@ -14,7 +14,7 @@
 }
 
 html * {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: IBM_BIOS;
 	font-weight: normal;
 	font-style: normal;
@@ -36,9 +36,9 @@ html * {
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(209, 36%, 86%);
 	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: rgb(94, 158, 175);
+	--color-theme-1: rgb(139, 217, 238);
 	--color-theme-2: #4075a6;
-	--color-theme-tide: #131313;
+	--color-theme-tide: #0e1829;
 	--color-text: rgba(0, 0, 0, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -58,24 +58,25 @@ html * {
 
 @keyframes crt-output {
 	0% {
-		opacity: 0.9;
+		opacity: 0.97;
 	}
 	50% {
 		opacity: 1;
 	}
 }
 .glow {
+	z-index: -2;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
 	width: 100%;
 	height: 100%;
-	animation: crt-glow 60s infinite;
+	animation: crt-glow 30s infinite;
 	background: radial-gradient(
 		circle at center,
-		rgb(18, 133, 148) 0%,
-		rgba(12, 85, 128, 0.88) 58%,
+		rgb(5, 76, 85) 0%,
+		rgba(7, 61, 92, 0.88) 58%,
 		rgba(5, 74, 87, 0.57) 80%,
 		rgba(10, 47, 61, 0.27) 93%,
 		rgba(10, 19, 23, 0) 100%
@@ -95,7 +96,9 @@ html * {
 		opacity: 0.2;
 	}
 }
-
+.index99 {
+	z-index: 99;
+}
 .scanlines {
 	top: 0;
 	left: 0;

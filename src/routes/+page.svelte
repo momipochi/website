@@ -1,7 +1,7 @@
 <script>
 	import SimpleIcon from '$lib/components/SimpleIcon.svelte';
-	import Avatar from '$lib/images/prof.jpg';
-	import { siGithub } from 'simple-icons';
+	import Avatar from '$lib/images/prof.webp';
+	import { siGithub, siLinkedin, siGmail } from 'simple-icons';
 </script>
 
 <svelte:head>
@@ -9,14 +9,74 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<div>
-	hello
-
-	<img src={Avatar} class="avatar" alt="my avatar" />
-	<SimpleIcon data={siGithub} size="1em" />
+<div class="page">
+	<div class="prof">
+		<img src={Avatar} class="avatar" alt="my avatar" />
+		<div class="social-prof-list">
+			<a href="https://github.com/momipochi" target="_blank"
+				><SimpleIcon data={siGithub} size="1.5em" /></a
+			>
+			<a href="https://www.linkedin.com/in/alexander-tu-515092223/" target="_blank"
+				><SimpleIcon data={siLinkedin} size="1.5em" /></a
+			>
+			<a href="mailto:k25650727@gmail.com"><SimpleIcon data={siGmail} size="1.5em" /></a>
+		</div>
+	</div>
+	<div class="content">
+		<pre class="name">
+ █████╗ ██╗     ███████╗██╗  ██╗ █████╗ ███╗   ██╗██████╗ ███████╗██████╗     ████████╗██╗   ██╗
+██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██╗    ╚══██╔══╝██║   ██║
+███████║██║     █████╗   ╚███╔╝ ███████║██╔██╗ ██║██║  ██║█████╗  ██████╔╝       ██║   ██║   ██║
+██╔══██║██║     ██╔══╝   ██╔██╗ ██╔══██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗       ██║   ██║   ██║
+██║  ██║███████╗███████╗██╔╝ ██╗██║  ██║██║ ╚████║██████╔╝███████╗██║  ██║       ██║   ╚██████╔╝
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝    ╚═════╝ </pre>
+		<div class="about-me-content">
+			<br />
+			I write programs.
+			<br />
+			<br />
+			This website is inspired by old computer terminals, with some retro aesthetic to it.
+			<br />
+			<br />
+			Finished bachelor's at Polish-Japanese Academy of Information Technology.
+			<br />
+			<br />
+			Currently work professionally as backend/frontend software engineer but most of my personal projects
+			are unrelated to web development.
+		</div>
+	</div>
 </div>
 
 <style>
+	.name {
+		display: flex;
+		font-size: 18px;
+		margin: 0 auto 0 0;
+		padding: 0;
+		background-color: var(--color-theme-1);
+	}
+	.about-me-content {
+		width: 100%;
+		hyphens: auto;
+	}
+	.page {
+		display: flex;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		margin-left: 5%;
+	}
+	.social-prof-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.social-prof-list > a {
+		margin: 0 0 20% 20%;
+	}
+	.prof {
+		display: flex;
+	}
 	.avatar {
 		width: 300px;
 		height: 300px;

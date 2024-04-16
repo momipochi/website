@@ -18,9 +18,9 @@
 	<div class="grany noclick"></div>
 	<PageTransition url={$page.url.pathname}>
 		<div id="current-path">
-			usr@terminal:{$page.url.pathname}$
+			user@terminal:{$page.url.pathname}$
 		</div>
-		<div id="epilepsy-toggle" on:click={toggleEpilepsy} aria-hidden="true">disable flashing</div>
+		<!-- <div id="epilepsy-toggle" on:click={toggleEpilepsy} aria-hidden="true">disable flashing</div> -->
 		<div id="app-container">
 			<div class="terminal-nav"><TerminalNavigation /></div>
 			<div class="content">
@@ -40,7 +40,7 @@
 
 <style>
 	.epilepsy {
-		animation: crt-output 20ms infinite;
+		animation: crt-output 10ms infinite;
 	}
 	#current-path {
 		color: rgb(48, 189, 48);
@@ -49,10 +49,20 @@
 	.terminal-nav {
 		width: 20%;
 	}
-	.content {
-		padding: 10% 5% 10% 5%;
-		width: 80%;
+	.content-main {
+		display: flex;
+		overflow-y: auto;
+		margin: 0 auto auto auto;
 	}
+	.content {
+		display: flex;
+		width: 80%;
+		height: 80%;
+		padding: 0 5% 5% 5%;
+		margin: 0 auto auto auto;
+		
+	}
+	
 	#app-container {
 		display: flex;
 		width: 100%;

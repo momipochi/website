@@ -6,6 +6,7 @@
 </script>
 
 <svg
+	class="onhover"
 	role="img"
 	viewBox="0 0 24 24"
 	width={size}
@@ -16,3 +17,9 @@
 	<title>{data.title}</title>
 	<path d={data.path}></path>
 </svg>
+
+<style>
+	.onhover:hover {
+		background-color: rgb(117, 141, 156);
+	}
+</style>
