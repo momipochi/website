@@ -10,7 +10,7 @@
 }
 @font-face {
 	font-family: IBM_BIOS;
-	src: url('Px437_IBM_BIOS.ttf');
+	src: url('$lib/fonts/Px437_IBM_BIOS.ttf');
 }
 
 html * {
