@@ -9,20 +9,27 @@
 
 <div class="container">
 	<img class="index99" src={project.image.src} alt={project.image.alt} />
-	<div class="description">{project.description}</div>
-	<div class="footer">
-		<div class="left">
-			<TagCard tags={project.technologies} />
-		</div>
-		<div class="right">
-			<a href={project.url} target="_blank">
-				<SimpleIcon data={siGithub} size="1.5em" />
-			</a>
+	<div class="below-img">
+		<div class="description">{project.description}</div>
+		<div class="footer">
+			<div class="left">
+				<TagCard tags={project.technologies} />
+			</div>
+			<div class="right">
+				<a href={project.url} target="_blank">
+					<SimpleIcon data={siGithub} size="1.5em" />
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	.below-img {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
+	}
 	.description {
 		font-size: 18px;
 		hyphens: auto;
@@ -32,6 +39,7 @@
 		margin-bottom: 2%;
 		width: 100%;
 		height: 100%;
+		/* object-fit: cover; */
 	}
 	.container {
 		display: flex;
