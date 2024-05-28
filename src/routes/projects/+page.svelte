@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { projects } from './projects';
 	import GitProjectCard from '$lib/components/GitProjectCard.svelte';
+	import SlidingProjects from '$lib/components/SlidingProjectCardContainer.svelte';
 </script>
 
 <div class="project-container">
@@ -12,6 +13,10 @@
 		{/each}
 	</div>
 </div>
+
+<!-- <div>
+	<SlidingProjects />
+</div> -->
 
 <style>
 	.project-container {

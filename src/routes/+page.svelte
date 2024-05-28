@@ -61,11 +61,14 @@
 	}
 	.page {
 		display: flex;
+		margin: auto;
+		width: 70%;
 	}
 	.content {
 		display: flex;
 		flex-direction: column;
 		margin-left: 5%;
+		width: 100%;
 	}
 	.social-prof-list {
 		display: flex;

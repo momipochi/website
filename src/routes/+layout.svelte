@@ -47,7 +47,7 @@
 		padding: 1% 0 0 1%;
 	}
 	.terminal-nav {
-		width: 20%;
+		width: 10%;
 	}
 	.main-content {
 		display: flex;
