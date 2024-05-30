@@ -1,7 +1,7 @@
 import exh from '$lib/images/exh.webp';
 import pBomb from '$lib/images/physics_bomb.webp';
 import sixTen from '$lib/images/6tentalk.webp';
-
+import goChat from '$lib/images/go-realtime-chat.webp';
 export type ProjectType = {
 	title: string;
 	description: string;
@@ -26,11 +26,11 @@ export const projects: ProjectType[] = [
 		technologies: ['python', 'beautifulsoup']
 	},
 	{
-		title: 'physics bomb',
-		description: 'Physics simulation using translation by vector.',
-		url: 'https://github.com/momipochi/physics_bomb',
-		image: { src: pBomb, alt: 'physics bomb' },
-		technologies: ['javascript', 'p5js']
+		title: 'go realtime chat',
+		description: 'Multi-threaded realtime chat. This project focuses on Go.',
+		url: 'https://github.com/momipochi/go-realtime-chat',
+		image: { src: goChat, alt: 'go-realtime-chat' },
+		technologies: ['go', 'reactTS', 'websocket', 'docker', 'work in progess']
 	},
 	{
 		title: 'taiwan amigo',
@@ -38,5 +38,12 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/taiwan_amigo',
 		image: { src: sixTen, alt: 'taiwan amigo' },
 		technologies: ['nestjs', 'nodejs', 'typescript', 'vue3', 'websocket', 'docker', 'azure']
+	},
+	{
+		title: 'physics bomb',
+		description: 'Physics simulation using translation by vector.',
+		url: 'https://github.com/momipochi/physics_bomb',
+		image: { src: pBomb, alt: 'physics bomb' },
+		technologies: ['javascript', 'p5js']
 	}
 ];
