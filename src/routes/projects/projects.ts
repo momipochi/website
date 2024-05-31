@@ -2,6 +2,8 @@ import exh from '$lib/images/exh.webp';
 import pBomb from '$lib/images/physics_bomb.webp';
 import sixTen from '$lib/images/6tentalk.webp';
 import goChat from '$lib/images/go-realtime-chat.webp';
+import javaSpring from '$lib/images/java-spring.webp';
+import myWebsite from '$lib/images/my-website.webp';
 export type ProjectType = {
 	title: string;
 	description: string;
@@ -12,10 +14,10 @@ export type ProjectType = {
 
 export const projects: ProjectType[] = [
 	{
-		title: 'this website',
+		title: 'This website',
 		description: 'My website.',
 		url: 'https://github.com/momipochi/website',
-		image: { src: '', alt: "you're looking at it" },
+		image: { src: myWebsite, alt: "my website, you're looking at it, maybe" },
 		technologies: ['typescript', 'svelte', 'sveltekit']
 	},
 	{
@@ -31,6 +33,13 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/go-realtime-chat',
 		image: { src: goChat, alt: 'go-realtime-chat' },
 		technologies: ['go', 'reactTS', 'websocket', 'docker', 'work in progess']
+	},
+	{
+		title: 'java spring REST',
+		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
+		url: 'https://github.com/momipochi/java-spring-mini-project',
+		image: { src: javaSpring, alt: 'java spring' },
+		technologies: ['java', 'reactTS', 'spring', 'junit']
 	},
 	{
 		title: 'taiwan amigo',

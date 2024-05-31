@@ -27,7 +27,7 @@
 	}
 	.git-projects {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
 		gap: 1em;
 		height: 1%;
 	}
