@@ -24,6 +24,14 @@ export const projects: ProjectType[] = [
 		technologies: ['typescript', 'svelte', 'sveltekit']
 	},
 	{
+		title: 'Interpreter',
+		description: 'Lox interpreter written in go and c',
+		url: 'https://github.com/momipochi/interpreter',
+		image: { src: interpreter, alt: 'interpreter' },
+		technologies: ['go', 'c'],
+		wip: true
+	},
+	{
 		title: 'web-scraper',
 		description: 'Personal web scraping tool for gathering images from websites.',
 		url: 'https://github.com/momipochi/exh',
@@ -57,13 +65,5 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/physics_bomb',
 		image: { src: pBomb, alt: 'physics bomb' },
 		technologies: ['javascript', 'p5js']
-	},
-	{
-		title: 'Interpreter',
-		description: 'Lox interpreter written in go and c',
-		url: 'https://github.com/momipochi/interpreter',
-		image: { src: interpreter, alt: 'interpreter' },
-		technologies: ['go', 'c'],
-		wip: true
 	}
 ];
