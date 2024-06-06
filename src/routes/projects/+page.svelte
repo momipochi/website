@@ -4,13 +4,16 @@
 	import SlidingProjects from '$lib/components/SlidingProjectCardContainer.svelte';
 </script>
 
-<div class="project-container">
-	<div class="git-projects">
-		{#each projects as project}
-			<div>
-				<GitProjectCard {project} />
-			</div>
-		{/each}
+<div>
+	<div class="title">Some of my projects</div>
+	<div class="project-container">
+		<div class="git-projects">
+			{#each projects as project}
+				<div>
+					<GitProjectCard {project} />
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -19,7 +22,12 @@
 </div> -->
 
 <style>
+	.title {
+		display: flex;
+		margin: 0 auto 10px 0;
+	}
 	.project-container {
+		flex-direction: column;
 		display: flex;
 		margin: auto;
 		overflow-y: auto;

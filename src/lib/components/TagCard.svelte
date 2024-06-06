@@ -9,10 +9,10 @@
 <style>
 	.tag {
 		display: flex;
-		font-size: 12px;
+		font-size: 18px;
 		border: 1px solid red;
 		border-radius: 1%;
-		margin: 1%;
-		padding: 2.5%;
+		margin: 5px;
+		padding: 5px;
 	}
 </style>

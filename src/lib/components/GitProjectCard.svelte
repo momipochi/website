@@ -8,6 +8,9 @@
 </script>
 
 <div class="container">
+	{#if project.wip}
+		<div class="wip">Work in progress</div>
+	{/if}
 	<img class="index99" src={project.image.src} alt={project.image.alt} />
 	<div class="below-img">
 		<div class="description">{project.description}</div>
@@ -25,6 +28,12 @@
 </div>
 
 <style>
+	.wip {
+		background-color: rgb(167, 6, 6);
+		margin: 5px;
+		font-size: 22px;
+		color: white;
+	}
 	.below-img {
 		display: flex;
 		flex-direction: column;
@@ -57,11 +66,10 @@
 	}
 	.left {
 		display: flex;
-		margin: 0 auto 0 0;
 		flex-wrap: wrap;
 	}
 	.right {
 		display: flex;
-		margin: auto 0 auto auto;
+		margin: auto 0 0 auto;
 	}
 </style>

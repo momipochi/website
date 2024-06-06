@@ -4,12 +4,15 @@ import sixTen from '$lib/images/6tentalk.webp';
 import goChat from '$lib/images/go-realtime-chat.webp';
 import javaSpring from '$lib/images/java-spring.webp';
 import myWebsite from '$lib/images/my-website.webp';
+import interpreter from '$lib/images/interpreter.webp';
+
 export type ProjectType = {
 	title: string;
 	description: string;
 	url: string;
 	image: { src: string; alt: string };
 	technologies: string[];
+	wip?: true;
 };
 
 export const projects: ProjectType[] = [
@@ -32,7 +35,7 @@ export const projects: ProjectType[] = [
 		description: 'Multi-threaded realtime chat. This project focuses on Go.',
 		url: 'https://github.com/momipochi/go-realtime-chat',
 		image: { src: goChat, alt: 'go-realtime-chat' },
-		technologies: ['go', 'reactTS', 'websocket', 'docker', 'work in progess']
+		technologies: ['go', 'reactTS', 'websocket', 'docker']
 	},
 	{
 		title: 'java spring REST',
@@ -54,5 +57,13 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/physics_bomb',
 		image: { src: pBomb, alt: 'physics bomb' },
 		technologies: ['javascript', 'p5js']
+	},
+	{
+		title: 'Interpreter',
+		description: 'Lox interpreter written in go and c',
+		url: 'https://github.com/momipochi/interpreter',
+		image: { src: interpreter, alt: 'interpreter' },
+		technologies: ['go', 'c'],
+		wip: true
 	}
 ];
