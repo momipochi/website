@@ -5,6 +5,14 @@ import goChat from '$lib/images/go-realtime-chat.webp';
 import javaSpring from '$lib/images/java-spring.webp';
 import myWebsite from '$lib/images/my-website.webp';
 import interpreter from '$lib/images/interpreter.webp';
+import algorithms from '$lib/images/algorithms.webp';
+
+export const WIPTypes = {
+	WIP: 'WIP',
+	INDEFINITE: 'INDEFINITE'
+} as const;
+
+type WIPType = (typeof WIPTypes)[keyof typeof WIPTypes];
 
 export type ProjectType = {
 	title: string;
@@ -12,7 +20,7 @@ export type ProjectType = {
 	url: string;
 	image: { src: string; alt: string };
 	technologies: string[];
-	wip?: true;
+	wip?: { type: WIPType; msg: string };
 };
 
 export const projects: ProjectType[] = [
@@ -25,11 +33,11 @@ export const projects: ProjectType[] = [
 	},
 	{
 		title: 'Interpreter',
-		description: 'Lox interpreter written in go and c',
+		description: 'Lox interpreter written in go and c.',
 		url: 'https://github.com/momipochi/interpreter',
 		image: { src: interpreter, alt: 'interpreter' },
 		technologies: ['go', 'c'],
-		wip: true
+		wip: { type: WIPTypes.WIP, msg: 'Wrok in progress' }
 	},
 	{
 		title: 'web-scraper',
@@ -46,11 +54,12 @@ export const projects: ProjectType[] = [
 		technologies: ['go', 'reactTS', 'websocket', 'docker']
 	},
 	{
-		title: 'java spring REST',
-		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
-		url: 'https://github.com/momipochi/java-spring-mini-project',
-		image: { src: javaSpring, alt: 'java spring' },
-		technologies: ['java', 'reactTS', 'spring', 'junit']
+		title: 'algo-practice',
+		description: 'Repository for algorithm questions.',
+		url: 'https://github.com/momipochi/algo-practice',
+		image: { src: algorithms, alt: 'algorithms' },
+		technologies: ['go'],
+		wip: { type: WIPTypes.INDEFINITE, msg: 'Daily practice' }
 	},
 	{
 		title: 'taiwan amigo',
@@ -58,6 +67,13 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/taiwan_amigo',
 		image: { src: sixTen, alt: 'taiwan amigo' },
 		technologies: ['nestjs', 'nodejs', 'typescript', 'vue3', 'websocket', 'docker', 'azure']
+	},
+	{
+		title: 'java spring REST',
+		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
+		url: 'https://github.com/momipochi/java-spring-mini-project',
+		image: { src: javaSpring, alt: 'java spring' },
+		technologies: ['java', 'reactTS', 'spring', 'junit']
 	},
 	{
 		title: 'physics bomb',
