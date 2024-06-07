@@ -17,7 +17,6 @@
 	<div class="scanlines noclick"></div>
 	<div class="grany noclick"></div>
 	<PageTransition url={$page.url.pathname}>
-		<div>Last Updated:2024/05/31</div>
 		<div id="current-path">
 			user@terminal:{$page.url.pathname}$
 		</div>
