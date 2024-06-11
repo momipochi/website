@@ -83,7 +83,7 @@
 		height: 100%;
 	}
 	.image > img {
-		object-fit: cover;
+		object-fit: fill;
 		aspect-ratio: 16 / 14;
 		width: 100%;
 	}
