@@ -14,7 +14,7 @@
 		{:else if project.wip?.type === WIPTypes.INDEFINITE}
 			<span class="indefinite wip-type">{project.wip.msg}</span>
 		{:else if project.wip?.type === WIPTypes.WITH_CICD}
-			<a class="wip-type cicd" href={project.cicd?.pipeline}>
+			<a target="_blank" class="wip-type cicd" href={project.cicd?.pipeline}>
 				<img src={project.cicd?.status} alt="cicd status" />
 			</a>
 		{/if}
