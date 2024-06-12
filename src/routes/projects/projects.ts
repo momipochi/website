@@ -9,19 +9,37 @@ import algorithms from '$lib/images/algorithms.webp';
 
 export const WIPTypes = {
 	WIP: 'WIP',
-	INDEFINITE: 'INDEFINITE'
+	INDEFINITE: 'INDEFINITE',
+	WITH_CICD: 'WITH_CICD'
 } as const;
 
 type WIPType = (typeof WIPTypes)[keyof typeof WIPTypes];
 
-export type ProjectType = {
-	title: string;
-	description: string;
-	url: string;
-	image: { src: string; alt: string };
-	technologies: string[];
-	wip?: { type: WIPType; msg: string };
-};
+interface BaseForm {
+	type: WIPType;
+	msg: string;
+}
+type ConditionalType<T extends WIPType> = T extends typeof WIPTypes.WITH_CICD
+	? {
+			title: string;
+			description: string;
+			url: string;
+			image: { src: string; alt: string };
+			technologies: string[];
+			wip?: { type: WIPType; msg: string };
+			cicd: { pipeline: string; status: string };
+		}
+	: {
+			title: string;
+			description: string;
+			url: string;
+			image: { src: string; alt: string };
+			technologies: string[];
+			wip?: { type: WIPType; msg: string };
+			cicd?: { pipeline: string; status: string };
+		};
+
+export type ProjectType = ConditionalType<WIPType>;
 
 export const projects: ProjectType[] = [
 	{
@@ -29,7 +47,12 @@ export const projects: ProjectType[] = [
 		description: 'My website.',
 		url: 'https://github.com/momipochi/website',
 		image: { src: myWebsite, alt: "my website, you're looking at it, maybe" },
-		technologies: ['typescript', 'svelte', 'sveltekit']
+		technologies: ['typescript', 'svelte', 'sveltekit'],
+		wip: { type: WIPTypes.WITH_CICD, msg: 'website' },
+		cicd: {
+			pipeline: 'https://github.com/momipochi/website/actions/workflows/ci.yml',
+			status: 'https://github.com/momipochi/website/actions/workflows/ci.yml/badge.svg'
+		}
 	},
 	{
 		title: 'Interpreter',
@@ -59,7 +82,11 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
 		technologies: ['go'],
-		wip: { type: WIPTypes.INDEFINITE, msg: 'Daily practice' }
+		wip: { type: WIPTypes.WITH_CICD, msg: 'Daily practice' },
+		cicd: {
+			pipeline: 'https://github.com/momipochi/algo-practice/actions/workflows/cicd.yml',
+			status: 'https://github.com/momipochi/algo-practice/actions/workflows/cicd.yml/badge.svg'
+		}
 	},
 	{
 		title: 'java-algo-practice',
@@ -67,7 +94,12 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/java-algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
 		technologies: ['java'],
-		wip: { type: WIPTypes.INDEFINITE, msg: 'Daily practice' }
+		wip: { type: WIPTypes.WITH_CICD, msg: 'Daily practice' },
+		cicd: {
+			pipeline: 'https://github.com/momipochi/java-algo-practice/actions/workflows/maven.yml',
+			status:
+				'https://github.com/momipochi/java-algo-practice/actions/workflows/maven.yml/badge.svg'
+		}
 	},
 	{
 		title: 'taiwan amigo',

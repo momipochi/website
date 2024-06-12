@@ -13,6 +13,10 @@
 			<span class="wip wip-type">{project.wip.msg}</span>
 		{:else if project.wip?.type === WIPTypes.INDEFINITE}
 			<span class="indefinite wip-type">{project.wip.msg}</span>
+		{:else if project.wip?.type === WIPTypes.WITH_CICD}
+			<a class="wip-type cicd" href={project.cicd?.pipeline}>
+				<img src={project.cicd?.status} alt="cicd status" />
+			</a>
 		{/if}
 		<a href={project.url} target="_blank" class="index99 image">
 			<img class="index99" src={project.image.src} alt={project.image.alt} />
@@ -51,6 +55,9 @@
 		color: white;
 		margin: auto;
 		width: 100%;
+	}
+	.cicd {
+		height: 30px;
 	}
 	.title {
 		display: flex;
