@@ -60,7 +60,7 @@ export const projects: ProjectType[] = [
 		url: 'https://github.com/momipochi/interpreter',
 		image: { src: interpreter, alt: 'interpreter' },
 		technologies: ['go', 'c'],
-		wip: { type: WIPTypes.WIP, msg: 'Wrok in progress' }
+		wip: { type: WIPTypes.WIP, msg: 'Work in progress' }
 	},
 	{
 		title: 'web-scraper',
