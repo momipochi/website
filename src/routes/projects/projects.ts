@@ -54,11 +54,19 @@ export const projects: ProjectType[] = [
 		technologies: ['go', 'reactTS', 'websocket', 'docker']
 	},
 	{
-		title: 'algo-practice',
+		title: 'go-algo-practice',
 		description: 'Repository for algorithm questions.',
 		url: 'https://github.com/momipochi/algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
 		technologies: ['go'],
+		wip: { type: WIPTypes.INDEFINITE, msg: 'Daily practice' }
+	},
+	{
+		title: 'java-algo-practice',
+		description: 'Repository for algorithm questions.',
+		url: 'https://github.com/momipochi/java-algo-practice',
+		image: { src: algorithms, alt: 'algorithms' },
+		technologies: ['java'],
 		wip: { type: WIPTypes.INDEFINITE, msg: 'Daily practice' }
 	},
 	{
