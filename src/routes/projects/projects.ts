@@ -55,8 +55,7 @@ export const projects: ProjectType[] = [
 		description: 'Lox interpreter written in go and c.',
 		url: 'https://github.com/momipochi/interpreter',
 		image: { src: interpreter, alt: 'interpreter' },
-		technologies: ['go', 'c'],
-		wip: { type: WIPTypes.WIP, msg: 'Work in progress' }
+		technologies: ['go', 'c']
 	},
 	{
 		title: 'web-scraper',
