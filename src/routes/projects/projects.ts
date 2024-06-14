@@ -15,10 +15,6 @@ export const WIPTypes = {
 
 type WIPType = (typeof WIPTypes)[keyof typeof WIPTypes];
 
-interface BaseForm {
-	type: WIPType;
-	msg: string;
-}
 type ConditionalType<T extends WIPType> = T extends typeof WIPTypes.WITH_CICD
 	? {
 			title: string;
@@ -26,7 +22,7 @@ type ConditionalType<T extends WIPType> = T extends typeof WIPTypes.WITH_CICD
 			url: string;
 			image: { src: string; alt: string };
 			technologies: string[];
-			wip?: { type: WIPType; msg: string };
+			wip?: { type: T; msg: string };
 			cicd: { pipeline: string; status: string };
 		}
 	: {
