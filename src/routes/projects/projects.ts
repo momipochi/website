@@ -58,21 +58,21 @@ export const projects: ProjectType[] = [
 		technologies: ['go', 'c']
 	},
 	{
-		title: 'web-scraper',
+		title: 'Web scraper',
 		description: 'Personal web scraping tool for gathering images from websites.',
 		url: 'https://github.com/momipochi/exh',
 		image: { src: exh, alt: 'web-scraper' },
 		technologies: ['python', 'beautifulsoup']
 	},
 	{
-		title: 'go realtime chat',
+		title: 'Go realtime chat',
 		description: 'Multi-threaded realtime chat. This project focuses on Go.',
 		url: 'https://github.com/momipochi/go-realtime-chat',
 		image: { src: goChat, alt: 'go-realtime-chat' },
 		technologies: ['go', 'reactTS', 'websocket', 'docker']
 	},
 	{
-		title: 'go-algo-practice',
+		title: 'Go algo practice',
 		description: 'Repository for algorithm questions.',
 		url: 'https://github.com/momipochi/algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
@@ -84,7 +84,7 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'java-algo-practice',
+		title: 'Java algo practice',
 		description: 'Repository for algorithm questions.',
 		url: 'https://github.com/momipochi/java-algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
@@ -97,21 +97,21 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'taiwan amigo',
+		title: 'Taiwan amigo',
 		description: 'Social network using websocket to communicate between users.',
 		url: 'https://github.com/momipochi/taiwan_amigo',
 		image: { src: sixTen, alt: 'taiwan amigo' },
 		technologies: ['nestjs', 'nodejs', 'typescript', 'vue3', 'websocket', 'docker', 'azure']
 	},
 	{
-		title: 'java spring REST',
+		title: 'Java spring REST',
 		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
 		url: 'https://github.com/momipochi/java-spring-mini-project',
 		image: { src: javaSpring, alt: 'java spring' },
 		technologies: ['java', 'reactTS', 'spring', 'junit']
 	},
 	{
-		title: 'physics bomb',
+		title: 'Physics bomb',
 		description: 'Physics simulation using translation by vector.',
 		url: 'https://github.com/momipochi/physics_bomb',
 		image: { src: pBomb, alt: 'physics bomb' },
