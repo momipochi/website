@@ -104,7 +104,7 @@ export const projects: ProjectType[] = [
 		technologies: ['nestjs', 'nodejs', 'typescript', 'vue3', 'websocket', 'docker', 'azure']
 	},
 	{
-		title: 'Java spring REST',
+		title: 'Java Spring REST',
 		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
 		url: 'https://github.com/momipochi/java-spring-mini-project',
 		image: { src: javaSpring, alt: 'java spring' },
