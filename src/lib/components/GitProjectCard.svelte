@@ -3,6 +3,7 @@
 	import { WIPTypes, type ProjectType } from '../../routes/projects/projects';
 	import SimpleIcon from './SimpleIcon.svelte';
 	import TagCard from './TagCard.svelte';
+	import { t } from '$lib/internationalization/localize';
 
 	export let project: ProjectType;
 </script>
@@ -23,11 +24,11 @@
 		</a>
 	</div>
 	<h3 class="title">
-		{project.title}
+		{@html $t(project.title)}
 	</h3>
 	<span class="spacer"></span>
 	<div class="below-img">
-		<span class="description">{project.description}</span>
+		<span class="description">{@html $t(project.description)}</span>
 
 		<div class="footer">
 			<div class="left">

@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"i18next": "^23.11.5",
 		"simple-icons": "^11.12.0"
 	}
 }

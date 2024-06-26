@@ -2,10 +2,11 @@
 	import { projects } from './projects';
 	import GitProjectCard from '$lib/components/GitProjectCard.svelte';
 	import SlidingProjects from '$lib/components/SlidingProjectCardContainer.svelte';
+	import { t } from '$lib/internationalization/localize';
 </script>
 
 <div>
-	<div class="title">Some of my projects</div>
+	<div class="title">{$t('some_of_my_projects')}</div>
 	<div class="project-container">
 		<div class="git-projects">
 			{#each projects as project}

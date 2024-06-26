@@ -39,8 +39,8 @@ export type ProjectType = ConditionalType<WIPType>;
 
 export const projects: ProjectType[] = [
 	{
-		title: 'This website',
-		description: 'My website.',
+		title: 'website',
+		description: 'website_description',
 		url: 'https://github.com/momipochi/website',
 		image: { src: myWebsite, alt: "my website, you're looking at it, maybe" },
 		technologies: ['typescript', 'svelte', 'sveltekit'],
@@ -51,29 +51,29 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'Interpreter',
-		description: 'Lox interpreter written in go and c.',
+		title: 'interpreter',
+		description: 'interpreter_description',
 		url: 'https://github.com/momipochi/interpreter',
 		image: { src: interpreter, alt: 'interpreter' },
 		technologies: ['go', 'c']
 	},
 	{
-		title: 'Web scraper',
-		description: 'Personal web scraping tool for gathering images from websites.',
+		title: 'web_scraper_title',
+		description: 'web_scraper_description',
 		url: 'https://github.com/momipochi/exh',
 		image: { src: exh, alt: 'web-scraper' },
 		technologies: ['python', 'beautifulsoup']
 	},
 	{
-		title: 'Go realtime chat',
-		description: 'Multi-threaded realtime chat. This project focuses on Go.',
+		title: 'go_chat_title',
+		description: 'go_chat_description',
 		url: 'https://github.com/momipochi/go-realtime-chat',
 		image: { src: goChat, alt: 'go-realtime-chat' },
 		technologies: ['go', 'reactTS', 'websocket', 'docker']
 	},
 	{
-		title: 'Go algo practice',
-		description: 'Repository for algorithm questions.',
+		title: 'go_algo_title',
+		description: 'repository_for_algo',
 		url: 'https://github.com/momipochi/algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
 		technologies: ['go'],
@@ -84,8 +84,8 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'Java algo practice',
-		description: 'Repository for algorithm questions.',
+		title: 'java_algo_title',
+		description: 'repository_for_algo',
 		url: 'https://github.com/momipochi/java-algo-practice',
 		image: { src: algorithms, alt: 'algorithms' },
 		technologies: ['java'],
@@ -97,22 +97,22 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'Taiwan amigo',
-		description: 'Social network using websocket to communicate between users.',
+		title: 'taiwan_amigo',
+		description: 'taiwan_amigo_description',
 		url: 'https://github.com/momipochi/taiwan_amigo',
 		image: { src: sixTen, alt: 'taiwan amigo' },
 		technologies: ['nestjs', 'nodejs', 'typescript', 'vue3', 'websocket', 'docker', 'azure']
 	},
 	{
-		title: 'Java Spring REST',
-		description: 'Complete REST project in Java with junit tests, repository pattern, etc.',
+		title: 'java_spring_rest',
+		description: 'java_spring_rest_description',
 		url: 'https://github.com/momipochi/java-spring-mini-project',
 		image: { src: javaSpring, alt: 'java spring' },
 		technologies: ['java', 'reactTS', 'spring', 'junit']
 	},
 	{
-		title: 'Physics bomb',
-		description: 'Physics simulation using translation by vector.',
+		title: 'physics_bomb',
+		description: 'physics_bomb_description',
 		url: 'https://github.com/momipochi/physics_bomb',
 		image: { src: pBomb, alt: 'physics bomb' },
 		technologies: ['javascript', 'p5js']

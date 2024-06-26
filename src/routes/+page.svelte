@@ -1,6 +1,7 @@
 <script>
 	import SimpleIcon from '$lib/components/SimpleIcon.svelte';
 	import Avatar from '$lib/images/prof.webp';
+	import { t } from '$lib/internationalization/localize';
 	import { siGithub, siLinkedin, siGmail } from 'simple-icons';
 </script>
 
@@ -32,17 +33,7 @@
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝       ╚═╝    ╚═════╝ </pre>
 		<div class="about-me-content">
 			<br />
-			I write programs.
-			<br />
-			<br />
-			This website is inspired by old computer terminals, with some retro aesthetic to it.
-			<br />
-			<br />
-			Finished bachelor's at Polish-Japanese Academy of Information Technology.
-			<br />
-			<br />
-			Currently work professionally as backend/frontend software engineer but most of my personal projects
-			are unrelated to web development.
+			{@html $t('about')}
 		</div>
 	</div>
 </div>
