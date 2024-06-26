@@ -87,7 +87,7 @@
 		display: flex;
 		width: 80%;
 		height: 90%;
-		padding: 0 2% 2% 2%;
+		padding: 0 20px 20px 20px;
 		margin: 0 auto 0 auto;
 	}
 

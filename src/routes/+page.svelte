@@ -58,7 +58,7 @@
 	.content {
 		display: flex;
 		flex-direction: column;
-		margin-left: 5%;
+		margin-left: 50px;
 		width: 100%;
 	}
 	.social-prof-list {
