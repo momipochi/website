@@ -38,7 +38,7 @@ export const translate = (locale: string, key: string) => {
 	let translations = resource(locale);
 	let text = translations[key];
 
-	if (!text) throw new Error('Translation was not found');
+	if (!text) throw new Error(`Translation was not found. Locale: ${locale}, Key: ${key}`);
 
 	return text;
 };
