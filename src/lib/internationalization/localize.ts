@@ -3,7 +3,7 @@ import { translations } from './translations';
 import { derived, writable } from 'svelte/store';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-export const locales = ['jp', 'en', 'zh-TW'];
+export const locales = ['en', 'jp', 'zh-TW'];
 const resource = (language: string) => {
 	return Object.keys(translations).reduce(
 		(acc, key) => {
