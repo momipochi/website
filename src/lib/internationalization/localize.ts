@@ -1,7 +1,9 @@
 import i18next, { type BackendModule, type ReadCallback } from 'i18next';
 import { translations } from './translations';
 import { derived, writable } from 'svelte/store';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
+export const locales = ['jp', 'en', 'zh-TW'];
 const resource = (language: string) => {
 	return Object.keys(translations).reduce(
 		(acc, key) => {
@@ -22,14 +24,30 @@ const customTransform: BackendModule = {
 	init: () => {}
 };
 
-export const c = i18next.use(customTransform).init({
-	debug: true,
-	fallbackLng: 'en',
-	initImmediate: false
-});
+i18next
+	.use(customTransform)
+	.use(LanguageDetector)
+	.init({
+		detection: {
+			order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag'],
+			lookupQuerystring: 'lng',
+			lookupCookie: 'i18next',
+			lookupLocalStorage: 'i18nextLng',
+			lookupSessionStorage: 'i18nextLng',
+
+			// cache user language
+			caches: ['localStorage'],
+			excludeCacheFor: ['cimode']
+			//cookieMinutes: 10,
+			//cookieDomain: 'myDomain'
+		},
+		debug: true,
+		fallbackLng: 'en',
+		initImmediate: false,
+		supportedLngs: locales
+	});
 
 export const locale = writable(i18next.language);
-export const locales = ['en', 'jp', 'zhTW'];
 
 export const translate = (locale: string, key: string) => {
 	if (!key) throw new Error('No key provided');
