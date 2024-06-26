@@ -34,6 +34,16 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 		jp: '／プロジェクト',
 		zhTW: '／個人項目'
 	},
+	'/website/': {
+		en: '/website/',
+		jp: '／ウェブサイト／',
+		zhTW: '／網頁／'
+	},
+	'/website/projects': {
+		en: '/website/projects',
+		jp: '／ウェブサイト／プロジェクト',
+		zhTW: '／網頁／個人項目'
+	},
 	some_of_my_projects: {
 		en: 'Some of my projects',
 		jp: '私のプロジェクトのいくつか',
