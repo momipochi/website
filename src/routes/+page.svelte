@@ -53,7 +53,7 @@
 	.page {
 		display: flex;
 		margin: auto;
-		width: 70%;
+		padding: 20vw;
 	}
 	.content {
 		display: flex;

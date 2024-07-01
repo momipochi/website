@@ -81,12 +81,11 @@
 	}
 	.main-content {
 		display: flex;
-		margin: 0 auto 0 auto;
 	}
 	.content {
 		display: flex;
-		width: 80%;
-		height: 90%;
+		width: 100%;
+		height: 100%;
 		padding: 0 20px 20px 20px;
 		margin: 0 auto 0 auto;
 	}
@@ -95,7 +94,7 @@
 		display: flex;
 		width: 100%;
 		height: 100%;
-		padding: 1%;
+		padding: 10px;
 	}
 	#epilepsy-toggle {
 		display: inline-flex;
