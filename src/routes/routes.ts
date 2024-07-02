@@ -24,5 +24,5 @@ export const Routes: RouteTpye[] = [
 	{ url: `${base}/`, name: 'home' },
 	{ url: `${base}/projects`, name: 'projects' },
 	// { url: `${base}/games`, name: 'games' }
-	{ url: `${base}/${resume}.pdf`, name: 'resume' }
+	{ url: `${base}/resume.pdf`, name: 'resume' }
 ];
