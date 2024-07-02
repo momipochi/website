@@ -11,8 +11,8 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 	},
 	resume: {
 		en: 'resume',
-		jp: '履歴書',
-		'zh-TW': '履歷'
+		jp: '履歴書（英）',
+		'zh-TW': '履歷（英）'
 	},
 	about: {
 		en: "I write programs.<br/><br/>This website is inspired by old computer terminals, with some retro aesthetic to it.<br/><br/>Finished bachelor's at Polish-Japanese Academy of Information Technology.<br/><br/>Currently work professionally as backend/frontend software engineer and I like to work on personal projects during my free time.",

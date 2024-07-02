@@ -5,7 +5,7 @@
 	import { t } from '$lib/internationalization/localize';
 </script>
 
-<div>
+<div class="project-page">
 	<div class="title">{$t('some_of_my_projects')}</div>
 	<div class="project-container">
 		<div class="git-projects">
@@ -23,6 +23,11 @@
 </div> -->
 
 <style>
+	.project-page {
+		display: flex;
+		margin: 0 auto 0 auto;
+		flex-direction: column;
+	}
 	.title {
 		display: flex;
 		margin: 0 auto 10px 0;

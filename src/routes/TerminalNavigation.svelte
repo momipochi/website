@@ -5,7 +5,7 @@
 	import { Routes } from './routes';
 </script>
 
-<div id="nav-container">
+<div id="nav-container" {...$$restProps}>
 	{#each Routes as route}
 		<a
 			class="terminal-nav"

@@ -19,7 +19,7 @@
 	<div class="grany noclick"></div>
 	<PageTransition url={$page.url.pathname}>
 		<div class="header-bar">
-			<span id="current-path">
+			<span id="current-path" lang={$locale}>
 				{$t('user@terminal')}:{$t($page.url.pathname)}$
 			</span>
 			<div class="language-selector">
@@ -81,6 +81,7 @@
 	}
 	.main-content {
 		display: flex;
+		width: 90%;
 	}
 	.content {
 		display: flex;
