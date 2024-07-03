@@ -82,6 +82,7 @@
 	.main-content {
 		display: flex;
 		width: 90%;
+		height: 90%;
 	}
 	.content {
 		display: flex;
