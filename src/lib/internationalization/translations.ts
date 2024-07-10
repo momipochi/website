@@ -60,6 +60,21 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 		jp: '私のウェブサイト',
 		'zh-TW': '我的網站'
 	},
+	tmdblite: {
+		en: 'TMDBLite',
+		jp: 'TMDBLite',
+		'zh-TW': 'TMDBLite'
+	},
+	tmdblite_alt: {
+		en: 'tmdblite',
+		jp: 'tmdblite',
+		'zh-TW': 'tmdblite'
+	},
+	tmdblite_description: {
+		en: 'Client side only movie persistence archive.',
+		jp: 'Client side only movie persistence archive.',
+		'zh-TW': 'Client side only movie persistence archive.'
+	},
 	interpreter: {
 		en: 'Interpreter',
 		jp: 'インタプリタ',

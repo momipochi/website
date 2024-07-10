@@ -6,6 +6,7 @@ import javaSpring from '$lib/images/java-spring.webp';
 import myWebsite from '$lib/images/my-website.webp';
 import interpreter from '$lib/images/interpreter.webp';
 import algorithms from '$lib/images/algorithms.webp';
+import tmdblite from '$lib/images/tmdblite.webp';
 
 export const WIPTypes = {
 	WIP: 'WIP',
@@ -20,6 +21,7 @@ type ConditionalType<T extends WIPType> = T extends typeof WIPTypes.WITH_CICD
 			title: string;
 			description: string;
 			url: string;
+			demo?: string;
 			image: { src: string; alt: string };
 			technologies: string[];
 			wip?: { type: T; msg: string };
@@ -29,6 +31,7 @@ type ConditionalType<T extends WIPType> = T extends typeof WIPTypes.WITH_CICD
 			title: string;
 			description: string;
 			url: string;
+			demo?: string;
 			image: { src: string; alt: string };
 			technologies: string[];
 			wip?: { type: WIPType; msg: string };
@@ -51,10 +54,18 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
+		title: 'tmdblite',
+		description: 'tmdblite_description',
+		url: 'https://github.com/momipochi/tmdbLite',
+		demo: 'https://main--lovely-semolina-46fcf2.netlify.app/',
+		image: { src: tmdblite, alt: 'tmdblite' },
+		technologies: ['typescript', 'react', 'vite', 'tanstack', 'shadcnui']
+	},
+	{
 		title: 'interpreter',
 		description: 'interpreter_description',
 		url: 'https://github.com/momipochi/interpreter',
-		image: { src: interpreter, alt: 'interpreter' },
+		image: { src: interpreter, alt: 'interpreter_alt' },
 		technologies: ['go', 'c']
 	},
 	{

@@ -4,7 +4,7 @@
 	import SimpleIcon from './SimpleIcon.svelte';
 	import TagCard from './TagCard.svelte';
 	import { t } from '$lib/internationalization/localize';
-
+	import Icon from '@iconify/svelte';
 	export let project: ProjectType;
 </script>
 
@@ -36,9 +36,26 @@
 			</div>
 			<span class="spacer"></span>
 			<div class="right">
-				<a href={project.url} target="_blank">
+				<a href={project.url} target="_blank" class="links">
 					<SimpleIcon data={siGithub} size="1.5em" />
 				</a>
+				{#if project.demo}
+					<a href={project.demo} target="_blank" class="links">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1.5em"
+							height="1.5em"
+							viewBox="0 0 24 24"
+							{...$$props}
+							class="demo"
+						>
+							<path
+								fill="currentColor"
+								d="M11 17H7q-2.075 0-3.537-1.463T2 12t1.463-3.537T7 7h4v2H7q-1.25 0-2.125.875T4 12t.875 2.125T7 15h4zm-3-4v-2h8v2zm5 4v-2h4q1.25 0 2.125-.875T20 12t-.875-2.125T17 9h-4V7h4q2.075 0 3.538 1.463T22 12t-1.463 3.538T17 17z"
+							/>
+						</svg>
+					</a>
+				{/if}
 			</div>
 		</div>
 	</div>
@@ -48,6 +65,17 @@
 	:root {
 		--wip: rgb(167, 6, 6);
 		--indefinite: rgb(54, 167, 2);
+	}
+	.links {
+		margin: 2px;
+	}
+	.demo {
+		display: flex;
+		width: 1.5em;
+		height: 1.5em;
+	}
+	.demo:hover {
+		background-color: rgb(117, 141, 156);
 	}
 	.wip-type {
 		display: flex;
