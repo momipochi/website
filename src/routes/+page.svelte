@@ -52,14 +52,14 @@
 	}
 	.page {
 		display: flex;
-		margin: auto;
+		align-items: center;
+		justify-items: center;
 		padding: 20vw;
 	}
 	.content {
 		display: flex;
 		flex-direction: column;
 		margin-left: 50px;
-		width: 100%;
 	}
 	.social-prof-list {
 		display: flex;

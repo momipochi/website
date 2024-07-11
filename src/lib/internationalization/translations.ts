@@ -71,9 +71,9 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 		'zh-TW': 'tmdblite'
 	},
 	tmdblite_description: {
-		en: 'Client side only movie persistence archive.',
-		jp: 'Client side only movie persistence archive.',
-		'zh-TW': 'Client side only movie persistence archive.'
+		en: 'A minimalistic client-side only movie and TV show tracker.',
+		jp: 'クライアントサイドのみのミニマリストな映画とテレビ番組のトラッカー。',
+		zhTW: '僅客戶端的極簡電影和電視節目追蹤器。'
 	},
 	interpreter: {
 		en: 'Interpreter',
