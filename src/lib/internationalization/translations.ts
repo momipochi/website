@@ -73,7 +73,7 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 	tmdblite_description: {
 		en: 'A minimalistic client-side only movie and TV show tracker.',
 		jp: 'クライアントサイドのみのミニマリストな映画とテレビ番組のトラッカー。',
-		zhTW: '僅客戶端的極簡電影和電視節目追蹤器。'
+		'zh-TW': '僅客戶端的極簡電影和電視節目追蹤器。'
 	},
 	interpreter: {
 		en: 'Interpreter',
