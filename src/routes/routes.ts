@@ -1,5 +1,4 @@
 import { base } from '$app/paths';
-import { locale } from '$lib/internationalization/localize';
 
 export type RouteTpye = {
 	url: string;
@@ -24,5 +23,5 @@ export const Routes: RouteTpye[] = [
 	{ url: `${base}/`, name: 'home' },
 	{ url: `${base}/projects`, name: 'projects' },
 	// { url: `${base}/games`, name: 'games' }
-	{ url: `${base}/resume.pdf`, name: 'resume' }
+	{ url: `${base}/myresumes.pdf`, name: 'resume' }
 ];

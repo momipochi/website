@@ -36,6 +36,7 @@
 	"dependencies": {
 		"i18next": "^23.11.5",
 		"i18next-browser-languagedetector": "^8.0.0",
+		"mywebsite-v1": "file:../mywebsite-v1",
 		"simple-icons": "^11.12.0"
 	}
 }
