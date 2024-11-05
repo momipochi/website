@@ -65,6 +65,16 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 		jp: 'TMDBLite',
 		'zh-TW': 'TMDBLite'
 	},
+	javamicroservice: {
+		en: 'Java Microservice',
+		jp: 'Java マイクロサービス',
+		'zh-TW': 'Java微服務架構'
+	},
+	javamicroservice_description: {
+		en: 'A microservice application, integrated with multiple software tools',
+		jp: '複数のソフトウェアツールと統合されたマイクロサービスアプリケーション。',
+		'zh-TW': '整合多種軟體工具的微服務應用程式。'
+	},
 	tmdblite_alt: {
 		en: 'tmdblite',
 		jp: 'tmdblite',
