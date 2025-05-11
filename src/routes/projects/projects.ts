@@ -7,7 +7,7 @@ import myWebsite from '$lib/images/my-website.webp';
 import interpreter from '$lib/images/interpreter.webp';
 import algorithms from '$lib/images/algorithms.webp';
 import tmdblite from '$lib/images/tmdblite.webp';
-import javamicroservicedemo from '$lib/images/architecture-diagram.svg';
+import microservice from '$lib/images/microservice.svg';
 
 export const WIPTypes = {
 	WIP: 'WIP',
@@ -55,11 +55,21 @@ export const projects: ProjectType[] = [
 		}
 	},
 	{
-		title: 'javamicroservice',
-		description: 'javamicroservice_description',
-		url: 'https://github.com/momipochi/java-microservice-demo',
-		image: { src: javamicroservicedemo, alt: 'java microservice demo' },
-		technologies: ['java', 'spring', 'kubernetes', 'docker', 'rabbitmq']
+		title: 'eCommerce microservice',
+		description: 'microservice_description',
+		url: 'https://github.com/momipochi/microservice',
+		image: { src: microservice, alt: 'eCommerce microservice demo' },
+		technologies: [
+			'spring',
+			'.net',
+			'kafka',
+			'postgres',
+			'mongodb',
+			'elasticsearch',
+			'docker',
+			'nexus',
+			'react'
+		]
 	},
 	{
 		title: 'tmdblite',

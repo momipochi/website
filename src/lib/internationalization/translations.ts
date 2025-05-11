@@ -65,15 +65,16 @@ export const translations: { [key: string]: { [key: string]: string } } = {
 		jp: 'TMDBLite',
 		'zh-TW': 'TMDBLite'
 	},
-	javamicroservice: {
-		en: 'Java Microservice',
-		jp: 'Java マイクロサービス',
-		'zh-TW': 'Java微服務架構'
+	'eCommerce microservice': {
+		en: 'Microservice',
+		jp: 'マイクロサービス',
+		'zh-TW': '微服務架構'
 	},
-	javamicroservice_description: {
-		en: 'A microservice application, integrated with multiple software tools',
-		jp: '複数のソフトウェアツールと統合されたマイクロサービスアプリケーション。',
-		'zh-TW': '整合多種軟體工具的微服務應用程式。'
+	microservice_description: {
+		en: 'This repository contains a microservice project aimed at learning distributed systems from scratch, covering essential concepts like Domain-Driven Design (DDD), Command Query Responsibility Segregation (CQRS), and event sourcing, along with common enterprise tools like Elasticsearch, Docker, React (TypeScript), Spring, ASP.NET, PostgreSQL, MongoDB, Kafka, and Nexus. The project currently runs on Docker for simplicity, with plans to add Kubernetes, observability tools, and a service mesh (potentially using Envoy Proxy) as it evolves.',
+		jp: 'このリポジトリは、ドメイン駆動設計（DDD）、コマンドクエリ責務分離（CQRS）、イベントソーシングなどの基本概念を学ぶことを目的としたマイクロサービスプロジェクトです。Elasticsearch、Docker、React（TypeScript）、Spring、ASP.NET、PostgreSQL、MongoDB、Kafka、Nexus などの一般的なエンタープライズツールも使用しています。現在はシンプルさを優先して Docker 上で動作しており、将来的には Kubernetes、オブザーバビリティツール、Envoy Proxy を利用したサービスメッシュの導入を予定しています。',
+		'zh-TW':
+			'本儲存庫是一個微服務專案，旨在從零開始學習分散式系統的核心概念，例如領域驅動設計（DDD）、命令查詢責任分離（CQRS）、事件溯源等，並整合多種常見的企業工具，例如 Elasticsearch、Docker、React（TypeScript）、Spring、ASP.NET、PostgreSQL、MongoDB、Kafka 和 Nexus。目前專案以 Docker 為基礎執行以保持簡單，未來將規劃加入 Kubernetes、可觀察性工具及可能採用 Envoy Proxy 的服務網格架構。'
 	},
 	tmdblite_alt: {
 		en: 'tmdblite',

@@ -40,9 +40,14 @@
 		height: 100%;
 	}
 	.git-projects {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+		display: flex;
+		flex-direction: column;
 		gap: 1em;
+	}
+	.git-projects img {
+		max-height: 200px; /* or whatever height you want */
+		object-fit: cover;
+		width: 100%;
 	}
 	.project-container::-webkit-scrollbar {
 		width: 6px;
