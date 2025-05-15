@@ -45,10 +45,15 @@
 
 <style>
 	.name {
-		display: flex;
-		font-size: 18px;
-		margin: auto 0 auto 0;
+		font-size: 12px; /* Smaller or larger text size */
+		width: 100%; /* Or set a specific width like 600px */
+		max-width: 100%;
+		overflow-x: auto;
+		white-space: pre; /* Ensures it doesn't wrap */
 		background-color: var(--color-theme-1);
+		padding: 1rem;
+		border-radius: 8px;
+		box-sizing: border-box;
 	}
 	.about-me-content {
 		width: 100%;
@@ -60,6 +65,8 @@
 	}
 	.content {
 		display: flex;
+		max-width: 100%;
+		max-height: 100%;
 		flex-direction: column;
 		margin-left: 50px;
 	}
