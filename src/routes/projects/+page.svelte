@@ -25,7 +25,7 @@
 <style>
 	.project-page {
 		display: flex;
-		margin: 0 auto 0 auto;
+		padding: 5vh 10vh 15vh 10vh;
 		flex-direction: column;
 	}
 	.title {
@@ -37,18 +37,14 @@
 		display: flex;
 		margin: auto;
 		overflow-y: auto;
-		height: 100%;
 	}
 	.git-projects {
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
+		padding: 0 20px 0 20px;
 	}
-	.git-projects img {
-		max-height: 200px; /* or whatever height you want */
-		object-fit: cover;
-		width: 100%;
-	}
+
 	.project-container::-webkit-scrollbar {
 		width: 6px;
 	}

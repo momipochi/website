@@ -82,6 +82,7 @@
 	}
 	.main-content {
 		display: flex;
+		height: 100vh;
 	}
 	.content {
 		display: flex;

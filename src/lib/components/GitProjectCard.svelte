@@ -109,9 +109,27 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		overflow: hidden;
+		overflow-y: auto;
+		padding: 20px;
 	}
 
+	.right-details::-webkit-scrollbar {
+		width: 6px;
+	}
+
+	.right-details::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey;
+		border-radius: 10px;
+	}
+
+	.right-details::-webkit-scrollbar-thumb {
+		background: var(--color-theme-3);
+		border-radius: 10px;
+	}
+
+	.right-details::-webkit-scrollbar-thumb:hover {
+		background: #b30000;
+	}
 	.title {
 		margin: 0 0 0.5em 0;
 		color: wheat;
