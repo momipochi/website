@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="content">
-		<div class="name">ALEXANDER TU</div>
+		<pre class="name">{fullName}</pre>
 
 		<div class="about-me-content">
 			<br />
@@ -46,10 +46,7 @@
 <style>
 	.name {
 		color: black;
-		font-size: 64px; /* Smaller or larger text size */
-		width: 100%; /* Or set a specific width like 600px */
-		max-width: 100%;
-		overflow-x: auto;
+		font-size: 10px; /* Smaller or larger text size */
 		white-space: pre; /* Ensures it doesn't wrap */
 		background-color: var(--color-theme-1);
 		padding: 1rem;
@@ -57,7 +54,6 @@
 		box-sizing: border-box;
 	}
 	.about-me-content {
-		width: 100%;
 		hyphens: auto;
 	}
 	.page {
@@ -66,8 +62,7 @@
 	}
 	.content {
 		display: flex;
-		max-width: 100%;
-		max-height: 100%;
+
 		flex-direction: column;
 		margin-left: 50px;
 	}

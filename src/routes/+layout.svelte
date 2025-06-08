@@ -78,26 +78,20 @@
 		color: rgb(48, 189, 48);
 	}
 	.terminal-nav {
-		width: 10%;
+		display: flex;
 	}
 	.main-content {
 		display: flex;
-		width: 90%;
-		height: 90%;
 	}
 	.content {
 		display: flex;
-		width: 100%;
-		height: 100%;
-		padding: 0 20px 20px 20px;
-		margin: 0 auto 0 auto;
+		padding: 20px;
+		margin: auto;
 	}
 
 	#app-container {
 		display: flex;
-		width: 100%;
-		height: 100%;
-		padding: 10px;
+		flex-direction: column;
 	}
 	#epilepsy-toggle {
 		display: inline-flex;
