@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="content">
-		<pre class="name">{fullName}</pre>
+		<div class="name">ALEXANDER TU</div>
 
 		<div class="about-me-content">
 			<br />
@@ -45,7 +45,8 @@
 
 <style>
 	.name {
-		font-size: 12px; /* Smaller or larger text size */
+		color: black;
+		font-size: 64px; /* Smaller or larger text size */
 		width: 100%; /* Or set a specific width like 600px */
 		max-width: 100%;
 		overflow-x: auto;
